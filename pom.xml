@@ -10,6 +10,7 @@
     <version>1.0</version>
     <modules>
         <module>design-factory</module>
+        <module>singleton-prototype</module>
     </modules>
     <dependencyManagement>
         <dependencies>
