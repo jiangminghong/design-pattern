@@ -16,7 +16,7 @@ public class JdkProxyTest {
 
     public static void main(String[] args) {
         Object obj=new BuyCarHandler().getInstance(new Xiaohong());
-//        System.out.println(obj);
+        System.out.println(obj.getClass().getName());//com.sun.proxy.$Proxy0
         try {
             Method buycar = obj.getClass().getMethod("buycar", null);
             buycar.invoke(obj);
