@@ -1,4 +1,4 @@
-# design-pattern：factory
+# design-pattern：factory （创建型）
 工厂设计模式：属于创建型，当需要大量创造的场景时，可以考虑使用。
 
 简单工厂模式：

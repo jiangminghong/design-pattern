@@ -11,6 +11,7 @@
     <modules>
         <module>design-factory</module>
         <module>singleton-prototype</module>
+        <module>design-proxy</module>
     </modules>
     <dependencyManagement>
         <dependencies>
