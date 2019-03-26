@@ -2,6 +2,7 @@ package com.jmh.pattern;
 
 import static org.junit.Assert.assertTrue;
 
+import com.jmh.pattern.dynamicproxy.jdk.Xiaohong;
 import com.jmh.pattern.staticproxy.House;
 import org.junit.Test;
 
@@ -21,6 +22,11 @@ public class AppTest {
     }
 
     public static void main(String[] args) {
+        Class<?>[] interfaces = Xiaohong.class.getInterfaces();
+        for (Class in : interfaces) {
+            System.out.println(in);
+        }
+//        System.out.println(interfaces);
 //        Class [] classes=new Class[]{House.class,House.class};
 //        System.out.println(classes.length);
     }

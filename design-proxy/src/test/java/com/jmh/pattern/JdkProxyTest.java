@@ -1,11 +1,11 @@
 package com.jmh.pattern;
 
-import com.jmh.pattern.dynamicproxy.jdk.BuyCar;
 import com.jmh.pattern.dynamicproxy.jdk.BuyCarHandler;
 import com.jmh.pattern.dynamicproxy.jdk.Xiaohong;
+import sun.misc.ProxyGenerator;
 
+import java.io.FileOutputStream;
 import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
 
 /**
  * @description:
@@ -18,8 +18,12 @@ public class JdkProxyTest {
         Object obj=new BuyCarHandler().getInstance(new Xiaohong());
         System.out.println(obj.getClass().getName());//com.sun.proxy.$Proxy0
         try {
-            Method buycar = obj.getClass().getMethod("buycar", null);
+            Method buycar = obj.getClass().getMethod("buyHouse", null);
             buycar.invoke(obj);
+            byte [] bytes = ProxyGenerator.generateProxyClass("$Proxy0",new Class[]{Xiaohong.class});
+            FileOutputStream os = new FileOutputStream("E://$Proxy0.class");
+            os.write(bytes);
+            os.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
