@@ -13,6 +13,7 @@
         <module>singleton-prototype</module>
         <module>design-proxy</module>
         <module>delegate-strategy</module>
+        <module>template-adapter</module>
     </modules>
     <dependencyManagement>
         <dependencies>
