@@ -1,7 +1,7 @@
 package com.jmh.pattern.templates;
 
 /**
- * @description: 模板模式
+ * @description: 模板模式 可以通过继承和实现接口的方式
  * @author: JMH
  * @create: 2019-03-27 10:23
  */

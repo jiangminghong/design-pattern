@@ -14,6 +14,7 @@
         <module>design-proxy</module>
         <module>delegate-strategy</module>
         <module>template-adapter</module>
+        <module>wrapper-observer</module>
     </modules>
     <dependencyManagement>
         <dependencies>
